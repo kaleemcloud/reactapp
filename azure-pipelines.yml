@@ -25,10 +25,10 @@ steps:
   inputs:
     SourceFolder:
     Contents: '**'
-    TargetFolder: '${build.artifactstagingdirectory}'
+    TargetFolder: '${build.Artifactstagingdirectory}'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '${build.artifactstagingDirectory}'
+    PathtoPublish: '${build.ArtifactstagingDirectory}'
     ArtifactName: 'reactapp'
-    publishLocation: 'Container'
+    publishLocation: 'Container'  
