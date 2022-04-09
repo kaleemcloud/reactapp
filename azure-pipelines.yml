@@ -23,7 +23,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'reactapp'
+    SourceFolder:
     Contents: '**'
     TargetFolder: '${build.artifactstagingdirectory}'
 
